@@ -1,0 +1,15 @@
+.snowflake {
+  @apply flex items-center rounded-full gap-2 mb-5 relative bg-aquamarine-300 py-1 pl-1 pr-2;
+}
+
+.snowflake::after {
+  content: '';
+  @apply border border-wfbase-600 bottom-0 absolute;
+  border-bottom-left-radius: 8px;
+  border-right-width: 0;
+  border-top-width: 0;
+  height: 34px;
+  left: 18px;
+  transform: translateY(100%);
+  width: 50px;
+}

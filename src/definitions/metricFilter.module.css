@@ -1,0 +1,13 @@
+.filterContainer {
+  @apply flex items-center justify-start mt-3 mb-2;
+}
+
+.dateSelector {
+  @apply flex items-center justify-around border border-solid border-wfbase-400 w-full px-2;
+  height: 45px;
+  border-radius: 0px 6px 6px 0px;
+}
+
+.dateSelector input {
+  @apply border-0 text-wfbase-800 h-full outline-none pl-2 w-full;
+}

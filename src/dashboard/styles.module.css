@@ -1,0 +1,21 @@
+.navButton {
+  padding-left: 30px;
+  @apply relative h-12 flex items-center gap-3 text-xs cursor-pointer;
+  color: #4f4f4f;
+}
+
+.navButton::after {
+  content: '';
+  @apply absolute w-2 h-full left-0 top-0 hidden;
+  background: #a7fbcc;
+}
+
+.navButton:hover,
+.activeButton {
+  background: rgba(213, 255, 231, 0.16);
+}
+
+.navButton:hover::after,
+.activeButton::after {
+  @apply block;
+}
